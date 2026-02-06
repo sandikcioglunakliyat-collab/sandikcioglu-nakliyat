@@ -3,79 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandıkçıoğlu Nakliyat | Profesyonel Ev & Ofis Taşıma</title>
-    <meta name="description" content="İstanbul içi ve şehirler arası sigortalı, ambalajlı, asansörlü evden eve nakliyat ve depolama hizmetleri. 25 yıllık güven.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <title>Sandıkçıoğlu Nakliyat | Profesyonel Taşıma</title>
     <style>
-        :root { --primary: #800020; --gold: #D4AF37; }
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #2b050a; color: white; margin: 0; }
-        .serif { font-family: 'Playfair Display', serif; }
-        .gold-text { color: var(--gold); background: linear-gradient(to right, #AA8A1E, #F4D03F, #D4AF37); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .nav-link:hover { color: var(--gold); border-bottom: 2px solid var(--gold); }
-        .premium-card { background: rgba(128, 0, 32, 0.2); border: 1px solid rgba(212, 175, 55, 0.3); transition: all 0.3s; }
-        .premium-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #2b050a; /* O meşhur bordo */
+            color: #D4AF37; /* Gold renk */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            border: 2px solid #D4AF37;
+            padding: 40px;
+            border-radius: 15px;
+            background: rgba(128, 0, 32, 0.3);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+        h1 { font-size: 3rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 3px; }
+        p { font-size: 1.2rem; color: #fff; margin-bottom: 30px; }
+        .btn {
+            background-color: #D4AF37;
+            color: #2b050a;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover { background-color: #fff; transform: scale(1.05); }
     </style>
 </head>
 <body>
-
-    <nav class="flex justify-between items-center p-6 bg-[#2b050a] border-b border-[#D4AF37]/20 sticky top-0 z-50">
-        <div class="text-2xl serif font-bold gold-text">SANDIKÇIOĞLU</div>
-        <div class="hidden md:flex gap-8 font-semibold">
-            <a href="#" class="nav-link">Anasayfa</a>
-            <a href="#hizmetler" class="nav-link">Hizmetlerimiz</a>
-            <a href="#ilceler" class="nav-link">Bölgeler</a>
-            <a href="#iletisim" class="nav-link">İletişim</a>
-        </div>
-        <a href="tel:05000000000" class="bg-gradient-to-r from-[#D4AF37] to-[#AA8A1E] px-6 py-2 rounded-full text-[#2b050a] font-bold hover:scale-105 transition">Teklif Al</a>
-    </nav>
-
-    <section class="h-[80vh] flex flex-col justify-center items-center text-center px-4 bg-[url('https://images.unsplash.com/photo-1600585154340-be6199f7d009?auto=format&fit=crop&q=80')] bg-cover bg-center bg-blend-overlay bg-black/60">
-        <h1 class="text-5xl md:text-7xl serif font-bold mb-6 fade-in">Güvenle <span class="gold-text">Taşının</span></h1>
-        <p class="text-xl max-w-2xl text-slate-300 mb-8">25 yıllık tecrübe ile Sandıkçıoğlu Nakliyat, evinizi ve ofisinizi saray konforunda taşır.</p>
-        <div class="flex gap-4">
-            <button class="bg-[#800020] border border-[#D4AF37] px-8 py-3 rounded-md font-bold hover:bg-[#D4AF37] hover:text-white transition">Hizmetlerimizi İncele</button>
-        </div>
-    </section>
-
-    <section id="hizmetler" class="py-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-4xl serif text-center mb-16">Neden <span class="gold-text">Biz?</span></h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="premium-card p-8 rounded-xl text-center">
-                <i class="fas fa-shield-halved text-4xl gold-text mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Sigortalı Taşıma</h3>
-                <p class="text-slate-400">Eşyalarınız Sandıkçıoğlu güvencesiyle %100 sigortalıdır.</p>
-            </div>
-            <div class="premium-card p-8 rounded-xl text-center">
-                <i class="fas fa-box-open text-4xl gold-text mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Premium Ambalaj</h3>
-                <p class="text-slate-400">Kalın balonlu naylon ve özel kutularla maksimum koruma.</p>
-            </div>
-            <div class="premium-card p-8 rounded-xl text-center">
-                <i class="fas fa-truck-ramp-box text-4xl gold-text mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Asansörlü Nakliyat</h3>
-                <p class="text-slate-400">Yüksek katlara hasarsız ve hızlı ulaşım çözümleri.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer id="ilceler" class="bg-[#1a0306] py-12 px-6 border-t border-[#D4AF37]/20">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
-            <div>
-                <h4 class="serif text-xl gold-text mb-4">Sandıkçıoğlu</h4>
-                <p class="text-sm text-slate-500">İstanbul'un her noktasına profesyonel nakliyat hizmeti sağlıyoruz.</p>
-            </div>
-            <div class="col-span-3">
-                <h4 class="serif text-xl mb-4">Hizmet Bölgelerimiz</h4>
-                <div class="grid grid-cols-3 md:grid-cols-6 gap-2 text-xs text-slate-400">
-                    <span>Adalar</span> <span>Arnavutköy</span> <span>Ataşehir</span> <span>Avcılar</span> <span>Bağcılar</span> <span>Bahçelievler</span>
-                    <span>Bakırköy</span> <span>Başakşehir</span> <span>Bayrampaşa</span> <span>Beşiktaş</span> <span>Beykoz</span> <span>Beylikdüzü</span>
-                    </div>
-            </div>
-        </div>
-    </footer>
-
+    <div class="container">
+        <h1>SANDIKÇIOĞLU</h1>
+        <p>Profesyonel Evden Eve Nakliyat Hizmetleri</p>
+        <a href="tel:05000000000" class="btn">HEMEN TEKLİF AL</a>
+    </div>
+</body>
+</html>
 </body>
 </html>
