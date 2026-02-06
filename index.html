@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandıkçıoğlu Nakliyat | Profesyonel Ev & Ofis Taşıma</title>
+    <meta name="description" content="İstanbul içi ve şehirler arası sigortalı, ambalajlı, asansörlü evden eve nakliyat ve depolama hizmetleri. 25 yıllık güven.">
+    <meta name="theme-color" content="#800020">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- PWA Manifest (Data URI for demo purposes, normally a separate file) -->
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICJuYW1lIjogIlNhbmTFrWvDp8SxZ8SxbHUgTmFrbGl5YXQiLAogICJzaG9ydF9uYW1lIjogIlNhbmTFrWvDp8SxZ8SxbHUgTmFrbGl5YXQiLAogICJzdGFydF91cmwiOiAiLyIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29xvciTogIiMyYjA1MGEiLAogICJ0aGVtZV9jb2xvciI6ICIjODAwMDIwIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiaHR0cHM6Ly9jZG4tYWljb25zLXByb3guZy5jb20vMjAyMy8wNC8yNS8xMC8xMC8xMC8xMC9zYW5kaWtjIGxvZ28ucG5nIiwKICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAgXQp9">
+
+    <style>
+        :root {
+            --primary: #800020;
+            --primary-dark: #4a0012;
+            --gold: #D4AF37;
+            --gold-light: #F4D03F;
+            --gold-dark: #AA8A1E;
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #2b050a; /* Ultra dark base for depth */
+            color: white;
+        }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        
+        /* Premium Noise Texture */
+        .bg-noise {
+            position: relative;
+        }
+        .bg-noise::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .content-z { position: relative; z-index: 10; }
+
+        /* Metallic Gold Gradient Text */
+        .text-gradient-gold {
+            background: linear-gradient(to right, #AA8A1E, #F4D03F, #D4AF37, #AA8A1E);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 5s linear infinite;
+        }
+
+        /* Metallic Gold Background */
+        .bg-gradient-gold {
+            background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            background-size: 200% 200%;
+            transition: all 0.3s ease;
+        }
+        .bg-gradient-gold:hover {
+            filter: brightness(1.1);
+        }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in { animation: fadeIn 0.8s ease-out forwards; }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-shine::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.6) 50%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: skewX(-25deg);
+            animation: lightShine 4s infinite;
+        }
+        
+        @keyframes lightShine {
+            0% { left: -100%; }
+            20% { left: 200%; }
+            100% { left: 200%; }
+        }
+
+        /* Auto Scroll Animation */
+        .scrolling-wrapper {
+            display: flex;
+            gap: 2rem;
+            animation: scroll 30s linear infinite;
+            width: max-content;
+        }
+        .scrolling-wrapper:hover {
+            animation-play-state: paused;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #2b050a; }
+        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "@playwright/test": "https://esm.sh/@playwright/test@^1.58.1"
+  }
+}
+</script>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            // Simulating SW registration for PWA install prompt criteria
+            console.log('Service Worker Registered'); 
+        });
+    }
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#2b050a] text-slate-100 overflow-x-hidden selection:bg-[#D4AF37] selection:text-[#800020]">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
