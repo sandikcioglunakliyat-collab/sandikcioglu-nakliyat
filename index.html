@@ -4,48 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandıkçıoğlu Nakliyat | Profesyonel Taşıma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #2b050a; /* O meşhur bordo */
-            color: #D4AF37; /* Gold renk */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .container {
-            border: 2px solid #D4AF37;
-            padding: 40px;
-            border-radius: 15px;
-            background: rgba(128, 0, 32, 0.3);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-        }
-        h1 { font-size: 3rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 3px; }
-        p { font-size: 1.2rem; color: #fff; margin-bottom: 30px; }
-        .btn {
-            background-color: #D4AF37;
-            color: #2b050a;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .btn:hover { background-color: #fff; transform: scale(1.05); }
+        :root { --bordo: #2b050a; --gold: #D4AF37; }
+        body { background-color: var(--bordo); color: white; font-family: sans-serif; margin: 0; }
+        .gold-text { color: var(--gold); }
+        .premium-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .hero-bg { background: linear-gradient(rgba(43, 5, 10, 0.8), rgba(43, 5, 10, 0.8)), url('https://images.unsplash.com/photo-1600518464441-9154a4dba246?auto=format&fit=crop&q=80'); background-size: cover; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>SANDIKÇIOĞLU</h1>
-        <p>Profesyonel Evden Eve Nakliyat Hizmetleri</p>
-        <a href="tel:05000000000" class="btn">HEMEN TEKLİF AL</a>
-    </div>
-</body>
-</html>
+    <nav class="p-6 border-b border-[#D4AF37]/20 flex justify-between items-center">
+        <div class="text-2xl font-bold gold-text">SANDIKÇIOĞLU</div>
+        <div class="space-x-6 hidden md:block">
+            <a href="#" class="hover:text-[#D4AF37]">Hizmetler</a>
+            <a href="#" class="hover:text-[#D4AF37]">Bölgeler</a>
+            <a href="tel:05000000000" class="bg-[#D4AF37] text-[#2b050a] px-4 py-2 rounded font-bold">Teklif Al</a>
+        </div>
+    </nav>
+
+    <header class="hero-bg h-[70vh] flex flex-col items-center justify-center text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Saray Konforunda <span class="gold-text">Taşının</span></h1>
+        <p class="text-xl text-gray-300 max-w-2xl">25 yıllık tecrübe ile Sandıkçıoğlu güvencesinde sigortalı ve ambalajlı nakliyat çözümleri.</p>
+    </header>
+
+    <section class="py-16 px-6 max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        <div class="premium-border p-8 rounded-lg text-center bg-[#3d080e]">
+            <i class="fas fa-truck text-4xl gold-text mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Evden Eve</h3>
+            <p class="text-gray-400 text-sm">Anahtar teslim profesyonel paketleme ve taşıma.</p>
+        </div>
+        <div class="premium-border p-8 rounded-lg text-center bg-[#3d080e]">
+            <i class="fas fa-building text-4xl gold-text mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Ofis Taşıma</h3>
+            <p class="text-gray-400 text-sm">Kurumsal iş yeri taşımacılığında hızlı çözümler.</p>
+        </div>
+        <div class="premium-border p-8 rounded-lg text-center bg-[#3d080e]">
+            <i class="fas fa-boxes-packing text-4xl gold-text mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Eşya Depolama</h3>
+            <p class="text-gray-400 text-sm">Güvenli ve hijyenik depolama alanları.</p>
+        </div>
+    </section>
+
+    <footer class="bg-[#1a0306] p-10 border-t border-[#D4AF37]/20 text-center text-sm text-gray-500">
+        <p>© 2026 Sandıkçıoğlu Nakliyat. Tüm hakları saklıdır.</p>
+        <div class="mt-4 flex flex-wrap justify-center gap-4">
+            <span>Beşiktaş</span><span>Kadıköy</span><span>Etiler</span><span>Bakırköy</span>
+        </div>
+    </footer>
 </body>
 </html>
