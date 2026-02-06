@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandıkçıoğlu Nakliyat | Profesyonel Taşıma</title>
+    <title>Sandıkçıoğlu Nakliyat | Profesyonel Ev & Ofis Taşıma</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -11,47 +11,50 @@
         body { background-color: var(--bordo); color: white; font-family: sans-serif; margin: 0; }
         .gold-text { color: var(--gold); }
         .premium-border { border: 1px solid rgba(212, 175, 55, 0.3); }
-        .hero-bg { background: linear-gradient(rgba(43, 5, 10, 0.8), rgba(43, 5, 10, 0.8)), url('https://images.unsplash.com/photo-1600518464441-9154a4dba246?auto=format&fit=crop&q=80'); background-size: cover; }
+        .hero-bg { 
+            background: linear-gradient(rgba(43, 5, 10, 0.8), rgba(43, 5, 10, 0.8)), 
+            url('https://images.unsplash.com/photo-1600518464441-9154a4dba246?auto=format&fit=crop&q=80'); 
+            background-size: cover; 
+            background-position: center;
+        }
     </style>
 </head>
 <body>
-    <nav class="p-6 border-b border-[#D4AF37]/20 flex justify-between items-center">
+    <nav class="p-6 border-b border-[#D4AF37]/20 flex justify-between items-center bg-[#2b050a] sticky top-0 z-50">
         <div class="text-2xl font-bold gold-text">SANDIKÇIOĞLU</div>
-        <div class="space-x-6 hidden md:block">
-            <a href="#" class="hover:text-[#D4AF37]">Hizmetler</a>
-            <a href="#" class="hover:text-[#D4AF37]">Bölgeler</a>
-            <a href="tel:05000000000" class="bg-[#D4AF37] text-[#2b050a] px-4 py-2 rounded font-bold">Teklif Al</a>
+        <div class="hidden md:flex space-x-8">
+            <a href="#" class="hover:text-[#D4AF37] transition">Hizmetler</a>
+            <a href="#" class="hover:text-[#D4AF37] transition">Kurumsal</a>
+            <a href="tel:05000000000" class="bg-[#D4AF37] text-[#2b050a] px-5 py-2 rounded font-bold hover:bg-white transition">Hemen Ara</a>
         </div>
     </nav>
 
-    <header class="hero-bg h-[70vh] flex flex-col items-center justify-center text-center px-4">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Saray Konforunda <span class="gold-text">Taşının</span></h1>
-        <p class="text-xl text-gray-300 max-w-2xl">25 yıllık tecrübe ile Sandıkçıoğlu güvencesinde sigortalı ve ambalajlı nakliyat çözümleri.</p>
+    <header class="hero-bg h-[80vh] flex flex-col items-center justify-center text-center px-4">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">Güvenle <span class="gold-text">Taşının</span></h1>
+        <p class="text-xl text-gray-300 max-w-3xl mb-8">25 yıllık tecrübe ile Sandıkçıoğlu güvencesinde sigortalı, ambalajlı ve asansörlü nakliyat çözümleri.</p>
+        <button class="bg-[#800020] border-2 border-[#D4AF37] text-white px-10 py-4 rounded-full font-bold hover:bg-[#D4AF37] hover:text-[#2b050a] transition">ÜCRETSİZ TEKLİF AL</button>
     </header>
 
-    <section class="py-16 px-6 max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-        <div class="premium-border p-8 rounded-lg text-center bg-[#3d080e]">
-            <i class="fas fa-truck text-4xl gold-text mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Evden Eve</h3>
-            <p class="text-gray-400 text-sm">Anahtar teslim profesyonel paketleme ve taşıma.</p>
+    <section class="py-20 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+        <div class="premium-border p-10 rounded-2xl bg-[#3d080e] hover:border-[#D4AF37] transition duration-500">
+            <i class="fas fa-truck-moving text-5xl gold-text mb-6"></i>
+            <h3 class="text-2xl font-bold mb-4">Evden Eve</h3>
+            <p class="text-gray-400">Eşyalarınız özel paketleme sistemlerimizle hasarsız taşınır.</p>
         </div>
-        <div class="premium-border p-8 rounded-lg text-center bg-[#3d080e]">
-            <i class="fas fa-building text-4xl gold-text mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Ofis Taşıma</h3>
-            <p class="text-gray-400 text-sm">Kurumsal iş yeri taşımacılığında hızlı çözümler.</p>
+        <div class="premium-border p-10 rounded-2xl bg-[#3d080e] hover:border-[#D4AF37] transition duration-500">
+            <i class="fas fa-box-archive text-5xl gold-text mb-6"></i>
+            <h3 class="text-2xl font-bold mb-4">Eşya Depolama</h3>
+            <p class="text-gray-400">7/24 güvenlikli ve hijyenik odalarda eşyalarınızı saklıyoruz.</p>
         </div>
-        <div class="premium-border p-8 rounded-lg text-center bg-[#3d080e]">
-            <i class="fas fa-boxes-packing text-4xl gold-text mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Eşya Depolama</h3>
-            <p class="text-gray-400 text-sm">Güvenli ve hijyenik depolama alanları.</p>
+        <div class="premium-border p-10 rounded-2xl bg-[#3d080e] hover:border-[#D4AF37] transition duration-500">
+            <i class="fas fa-city text-5xl gold-text mb-6"></i>
+            <h3 class="text-2xl font-bold mb-4">Ofis Taşıma</h3>
+            <p class="text-gray-400">İş süreçleriniz aksamadan, profesyonel kurumsal taşımacılık.</p>
         </div>
     </section>
 
-    <footer class="bg-[#1a0306] p-10 border-t border-[#D4AF37]/20 text-center text-sm text-gray-500">
-        <p>© 2026 Sandıkçıoğlu Nakliyat. Tüm hakları saklıdır.</p>
-        <div class="mt-4 flex flex-wrap justify-center gap-4">
-            <span>Beşiktaş</span><span>Kadıköy</span><span>Etiler</span><span>Bakırköy</span>
-        </div>
+    <footer class="bg-[#1a0306] p-12 border-t border-[#D4AF37]/20 text-center">
+        <p class="text-gray-500">© 2026 Sandıkçıoğlu Nakliyat. Tüm İstanbul'da Hizmetinizdeyiz.</p>
     </footer>
 </body>
 </html>
