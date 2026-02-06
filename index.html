@@ -4,57 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandıkçıoğlu Nakliyat | Profesyonel Ev & Ofis Taşıma</title>
+    <meta name="description" content="25 yıllık tecrübe ile İstanbul içi ve şehirler arası sigortalı, ambalajlı nakliyat çözümleri.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --bordo: #2b050a; --gold: #D4AF37; }
-        body { background-color: var(--bordo); color: white; font-family: sans-serif; margin: 0; }
-        .gold-text { color: var(--gold); }
-        .premium-border { border: 1px solid rgba(212, 175, 55, 0.3); }
-        .hero-bg { 
-            background: linear-gradient(rgba(43, 5, 10, 0.8), rgba(43, 5, 10, 0.8)), 
-            url('https://images.unsplash.com/photo-1600518464441-9154a4dba246?auto=format&fit=crop&q=80'); 
-            background-size: cover; 
-            background-position: center;
-        }
+        :root { --bordo: #2b050a; --gold: #D4AF37; --gold-light: #f4d03f; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bordo); color: white; margin: 0; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .gold-gradient { background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .premium-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(212, 175, 55, 0.2); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .premium-card:hover { border-color: var(--gold); transform: translateY(-10px); background: rgba(212, 175, 55, 0.05); }
+        .hero-section { background: linear-gradient(rgba(43, 5, 10, 0.85), rgba(43, 5, 10, 0.85)), url('https://images.unsplash.com/photo-1580674684081-7617fbf3d745?q=80&w=2000&auto=format&fit=crop'); background-size: cover; background-attachment: fixed; }
+        .district-link { color: #94a3b8; font-size: 0.8rem; transition: 0.3s; cursor: pointer; }
+        .district-link:hover { color: var(--gold); }
     </style>
 </head>
 <body>
-    <nav class="p-6 border-b border-[#D4AF37]/20 flex justify-between items-center bg-[#2b050a] sticky top-0 z-50">
-        <div class="text-2xl font-bold gold-text">SANDIKÇIOĞLU</div>
-        <div class="hidden md:flex space-x-8">
-            <a href="#" class="hover:text-[#D4AF37] transition">Hizmetler</a>
-            <a href="#" class="hover:text-[#D4AF37] transition">Kurumsal</a>
-            <a href="tel:05000000000" class="bg-[#D4AF37] text-[#2b050a] px-5 py-2 rounded font-bold hover:bg-white transition">Hemen Ara</a>
+
+    <nav class="flex justify-between items-center p-6 border-b border-[#D4AF37]/20 sticky top-0 bg-[#2b050a]/95 backdrop-blur-md z-50">
+        <div class="text-2xl font-bold serif gold-gradient tracking-tighter">SANDIKÇIOĞLU</div>
+        <div class="hidden lg:flex gap-8 text-sm font-semibold uppercase tracking-widest">
+            <a href="#hizmetler" class="hover:text-[#D4AF37] transition">Hizmetlerimiz</a>
+            <a href="#ilceler" class="hover:text-[#D4AF37] transition">Hizmet Bölgeleri</a>
+            <a href="#blog" class="hover:text-[#D4AF37] transition">Blog</a>
         </div>
+        <a href="tel:05000000000" class="bg-gradient-to-r from-[#D4AF37] to-[#bf953f] px-6 py-2 rounded-full text-[#2b050a] font-bold shadow-lg shadow-[#D4AF37]/20 hover:scale-105 transition active:scale-95">TEKLİF AL</a>
     </nav>
 
-    <header class="hero-bg h-[80vh] flex flex-col items-center justify-center text-center px-4">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6">Güvenle <span class="gold-text">Taşının</span></h1>
-        <p class="text-xl text-gray-300 max-w-3xl mb-8">25 yıllık tecrübe ile Sandıkçıoğlu güvencesinde sigortalı, ambalajlı ve asansörlü nakliyat çözümleri.</p>
-        <button class="bg-[#800020] border-2 border-[#D4AF37] text-white px-10 py-4 rounded-full font-bold hover:bg-[#D4AF37] hover:text-[#2b050a] transition">ÜCRETSİZ TEKLİF AL</button>
+    <header class="hero-section min-h-[90vh] flex flex-col justify-center items-center text-center px-6">
+        <span class="text-[#D4AF37] font-bold tracking-[0.3em] mb-4 uppercase text-sm">İstanbul'un En Köklü Firması</span>
+        <h1 class="text-5xl md:text-8xl serif font-bold mb-8 leading-tight">Zarafetle <span class="gold-gradient">Taşın</span></h1>
+        <p class="text-lg md:text-xl text-slate-300 max-w-3xl mb-12 leading-relaxed">Sigortalı, asansörlü ve marangozlu evden eve nakliyat çözümleriyle eşyalarınızı değil, anılarınızı taşıyoruz.</p>
+        <div class="flex flex-col md:flex-row gap-6">
+            <a href="#hizmetler" class="bg-[#800020] border-2 border-[#D4AF37] px-10 py-4 rounded-md font-bold hover:bg-[#D4AF37] hover:text-[#2b050a] transition duration-500">HİZMETLERİMİZ</a>
+            <a href="https://wa.me/905000000000" class="flex items-center justify-center gap-3 bg-[#25D366] text-white px-10 py-4 rounded-md font-bold hover:opacity-90 transition">
+                <i class="fab fa-whatsapp text-2xl"></i> WHATSAPP DESTEK
+            </a>
+        </div>
     </header>
 
-    <section class="py-20 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
-        <div class="premium-border p-10 rounded-2xl bg-[#3d080e] hover:border-[#D4AF37] transition duration-500">
-            <i class="fas fa-truck-moving text-5xl gold-text mb-6"></i>
-            <h3 class="text-2xl font-bold mb-4">Evden Eve</h3>
-            <p class="text-gray-400">Eşyalarınız özel paketleme sistemlerimizle hasarsız taşınır.</p>
+    <section id="hizmetler" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl serif mb-4">Üst Segment <span class="gold-gradient">Hizmetler</span></h2>
+            <div class="h-1 w-24 bg-[#D4AF37] mx-auto"></div>
         </div>
-        <div class="premium-border p-10 rounded-2xl bg-[#3d080e] hover:border-[#D4AF37] transition duration-500">
-            <i class="fas fa-box-archive text-5xl gold-text mb-6"></i>
-            <h3 class="text-2xl font-bold mb-4">Eşya Depolama</h3>
-            <p class="text-gray-400">7/24 güvenlikli ve hijyenik odalarda eşyalarınızı saklıyoruz.</p>
-        </div>
-        <div class="premium-border p-10 rounded-2xl bg-[#3d080e] hover:border-[#D4AF37] transition duration-500">
-            <i class="fas fa-city text-5xl gold-text mb-6"></i>
-            <h3 class="text-2xl font-bold mb-4">Ofis Taşıma</h3>
-            <p class="text-gray-400">İş süreçleriniz aksamadan, profesyonel kurumsal taşımacılık.</p>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="premium-card p-10 rounded-3xl">
+                <div class="w-16 h-16 bg-[#D4AF37]/10 rounded-2xl flex items-center justify-center mb-8">
+                    <i class="fas fa-truck-ramp-box text-3xl gold-gradient"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Evden Eve Nakliyat</h3>
+                <p class="text-slate-400 mb-6 leading-relaxed">Saray konforunda, anahtar teslim taşıma hizmeti. Tüm eşyalarınız özel patpatlarla ambalajlanır.</p>
+                <ul class="text-sm space-y-2 text-[#D4AF37]">
+                    <li><i class="fas fa-check mr-2"></i> Sigortalı Taşımacılık</li>
+                    <li><i class="fas fa-check mr-2"></i> Profesyonel Paketleme</li>
+                </ul>
+            </div>
+            <div class="premium-card p-10 rounded-3xl">
+                <div class="w-16 h-16 bg-[#D4AF37]/10 rounded-2xl flex items-center justify-center mb-8">
+                    <i class="fas fa-boxes-packing text-3xl gold-gradient"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Eşya Depolama</h3>
+                <p class="text-slate-400 mb-6 leading-relaxed">7/24 kamera kayıtlı, hijyenik ve rutubetsiz depolama alanları. Eşyalarınız bizde güvende.</p>
+                <ul class="text-sm space-y-2 text-[#D4AF37]">
+                    <li><i class="fas fa-check mr-2"></i> Aylık & Yıllık Kiralama</li>
+                    <li><i class="fas fa-check mr-2"></i> Oda Tipi Depolar</li>
+                </ul>
+            </div>
+            <div class="premium-card p-10 rounded-3xl">
+                <div class="w-16 h-16 bg-[#D4AF37]/10 rounded-2xl flex items-center justify-center mb-8">
+                    <i class="fas fa-hotel text-3xl gold-gradient"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Ofis & İş Yeri</h3>
+                <p class="text-slate-400 mb-6 leading-relaxed">İş akışınız bozulmadan, kurumsal ve planlı ofis taşıma çözümleri. Arşiv ve mobilya montajı dahil.</p>
+                <ul class="text-sm space-y-2 text-[#D4AF37]">
+                    <li><i class="fas fa-check mr-2"></i> Sözleşmeli Taşıma</li>
+                    <li><i class="fas fa-check mr-2"></i> Hızlı Kurulum</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-[#1a0306] p-12 border-t border-[#D4AF37]/20 text-center">
-        <p class="text-gray-500">© 2026 Sandıkçıoğlu Nakliyat. Tüm İstanbul'da Hizmetinizdeyiz.</p>
+    <footer id="ilceler" class="bg-[#1a0306] py-16 px-6 border-t border-[#D4AF37]/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1">
+                    <div class="text-2xl font-bold serif gold-gradient mb-6">SANDIKÇIOĞLU</div>
+                    <p class="text-slate-500 text-sm leading-relaxed">İstanbul genelinde 39 ilçede profesyonel nakliyat hizmeti veren köklü kuruluş.</p>
+                </div>
+                <div class="col-span-3">
+                    <h4 class="text-lg font-bold mb-6 border-b border-[#D4AF37]/10 pb-2">Hizmet Bölgelerimiz</h4>
+                    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-x-4 gap-y-2">
+                        <span class="district-link">Adalar</span> <span class="district-link">Arnavutköy</span> <span class="district-link">Ataşehir</span>
+                        <span class="district-link">Avcılar</span> <span class="district-link">Bağcılar</span> <span class="district-link">Bahçelievler</span>
+                        <span class="district-link">Bakırköy</span> <span class="district-link">Başakşehir</span> <span class="district-link">Bayrampaşa</span>
+                        <span class="district-link">Beşiktaş</span> <span class="district-link">Beykoz</span> <span class="district-link">Beylikdüzü</span>
+                        <span class="district-link">Beyoğlu</span> <span class="district-link">Büyükçekmece</span> <span class="district-link">Çatalca</span>
+                        <span class="district-link">Çekmeköy</span> <span class="district-link">Esenler</span> <span class="district-link">Esenyurt</span>
+                        <span class="district-link">Eyüpsultan</span> <span class="district-link">Fatih</span> <span class="district-link">Gaziosmanpaşa</span>
+                        <span class="district-link">Güngören</span> <span class="district-link">Kadıköy</span> <span class="district-link">Kağıthane</span>
+                        <span class="district-link">Kartal</span> <span class="district-link">Küçükçekmece</span> <span class="district-link">Maltepe</span>
+                        <span class="district-link">Pendik</span> <span class="district-link">Sancaktepe</span> <span class="district-link">Sarıyer</span>
+                        <span class="district-link">Silivri</span> <span class="district-link">Sultanbeyli</span> <span class="district-link">Sultangazi</span>
+                        <span class="district-link">Şile</span> <span class="district-link">Şişli</span> <span class="district-link">Tuzla</span>
+                        <span class="district-link">Ümraniye</span> <span class="district-link">Üsküdar</span> <span class="district-link">Zeytinburnu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-8 border-t border-white/5 text-slate-600 text-xs">
+                © 2026 Sandıkçıoğlu Evden Eve Nakliyat. Tüm hakları saklıdır.
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
